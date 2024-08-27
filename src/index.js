@@ -6,4 +6,4 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
 
-document.body.classList.add("bg-gray-900");
+document.body.classList.add("bg-black");

@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 const SongSearchBar = ({ searchedText, setSearchedText }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-    //   console.log(searchedText);
+      console.log(searchedText);
     }, 500);
 
     return () => {
@@ -13,11 +13,11 @@ const SongSearchBar = ({ searchedText, setSearchedText }) => {
   }, [searchedText]);
 
   return (
-    <div className="my-6 relative w-[90%]">
+    <div className="my-6 relative w-full">
       <input
         type="text"
         placeholder="Search Song, Artist"
-        className="pl-4 pr-4 py-2 w-full bg-[#ffffff2b] rounded-md  focus:outline-none"
+        className="pl-4 pr-4 py-2 w-full bg-white bg-opacity-15  rounded-md  focus:outline-none"
         value={searchedText}
         onChange={(e) => {
           setSearchedText(e.target.value.trim());
